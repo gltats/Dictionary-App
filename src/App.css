@@ -1,0 +1,24 @@
+.App-header {
+  display: block;
+  padding: 20%;
+  text-align: center;
+  color: rgb(80, 79, 79);
+}
+
+img.dictionaryImg{
+  display: inline-block;
+  max-width: 100px;
+}
+
+hr{
+  border-radius: 5px;
+  border: 2px solid;
+  color: #61dafb;
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  color: rgba(71, 67, 67, 0.712);
+}
+
