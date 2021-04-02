@@ -16,7 +16,7 @@ function App() {
       className="loader"
         type="Watch"
         color="#00BFFF"
-        height={100}
+        height={70}
         width={100} 
       />
         </p>
