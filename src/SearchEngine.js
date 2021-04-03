@@ -30,7 +30,7 @@ export default function SearchEngine(){
                 {"  "}
                  <button className="SearchEngineForm"  type="button" onClick={search}>Search</button>
             </form>
-            <p className="exampleWords">i.e. abnegation, anachronistic, ascetic...</p>
+            <div className="exampleWords">i.e. abnegation, anachronistic, ascetic...</div>
             <Results results={results}/>
         </div>
         );

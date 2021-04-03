@@ -13,7 +13,7 @@ function App() {
         <img src={dictionary} className="dictionaryImg" alt="dictionary"/>
         </h1>
         <SearchEngine />
-        <p>
+        <div>
           This page is under development, please come back later
           <Loader
       className="loader"
@@ -22,7 +22,7 @@ function App() {
         height={70}
         width={100} 
       />
-        </p>
+        </div>
         
       </header>
 
