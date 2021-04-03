@@ -1,15 +1,18 @@
 
 import dictionary from './dictionary.jpg';
-import './App.css';import Loader from "react-loader-spinner";
+import './App.css';
+import Loader from "react-loader-spinner";
+import SearchEngine from './SearchEngine';
 
 function App() {
   return (
     <div className="App">
+      <div className="container">
       <header className="App-header">
        <h1>Dictionary
         <img src={dictionary} className="dictionaryImg" alt="dictionary"/>
         </h1>
-
+        <SearchEngine />
         <p>
           This page is under development, please come back later
           <Loader
@@ -34,7 +37,7 @@ function App() {
         Vector created by{" "}
         <a href='https://www.freepik.es/vectores/escuela'> pch.vector - www.freepik.es</a>
       </footer>
-      
+      </div>
     </div>
   );
 }
