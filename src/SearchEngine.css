@@ -1,4 +1,4 @@
-div.SearchEngine{
+section.SearchEngine{
     margin: 20px;
 }
 
@@ -9,4 +9,42 @@ div.exampleWords{
 .SearchEngineForm{
     border-radius: 10px;
     padding: 5px 10px;
+}
+
+section.overlay{
+    background: rgba(121, 119, 223, 0.199);
+    display: block;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.col-9{
+    display: block;
+    text-align: left;
+    padding: 20px 25px;
+}
+
+.col-2{
+    padding: 75px 10px;
+    text-align: center;
+}
+
+/* For phone */
+@media only screen and (max-width: 700px) {
+    section.overlay{
+        background: rgba(121, 119, 223, 0.199);
+        display: block;
+        margin: 0px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+.col-9{
+    padding: 5px 5px;
+}
+
+.col-2{
+    padding: 175px 5px 75px 5px;
+}
 }

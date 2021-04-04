@@ -24,7 +24,7 @@ export default function SearchEngine(){
         axios.get(apiUrl).then(handleResponse);
 
         let pexelsApiKey = "563492ad6f91700001000001ef6b9bfe5a4345fdbd204f578a692536";
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
         let headers = {Authorization: `Bearer ${pexelsApiKey}` }
         
         axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
@@ -35,7 +35,8 @@ export default function SearchEngine(){
     }
 
     return (
-        <div className="SearchEngine">
+        <div>
+         <section className="SearchEngine">
             <form onSubmit={search}> 
                 <input type="search" onChange=
                 {handleKeywordChange}  placeholder="Add a word" className="SearchEngineForm" />
@@ -43,8 +44,18 @@ export default function SearchEngine(){
                  <button className="SearchEngineForm"  type="button" onClick={search}>Search</button>
             </form>
             <div className="exampleWords">i.e. abnegation, anachronistic, ascetic...</div>
-            <Results results={results} />
-            <Photos photos={photos} />
+         </section>
+         <section className="overlay">
+            <div className="row">
+                <div className="col-9">
+                    <Results results={results} />
+                </div>
+                <div className="col-2">
+                     <Photos photos={photos} />
+                </div>  
+            </div>
+        </section>
         </div>
+
         );
 }
