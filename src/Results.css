@@ -5,3 +5,23 @@ h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+div.info{
+    text-align: center;
+    margin: 0%;
+    padding-left: 200px;
+    padding-right: 0%;
+    }
+
+.loader{
+    margin-top: 15px;
+  }
+
+  /* For phone */
+@media only screen and (max-width: 700px) {
+    div.info{
+        text-align: center;
+        margin: 10px;
+        padding-left: 40px;
+        padding-right: 0%;
+        }
+}

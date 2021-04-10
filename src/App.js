@@ -1,7 +1,6 @@
 
 import dictionary from './dictionary.jpg';
 import './App.css';
-import Loader from "react-loader-spinner";
 import SearchEngine from './SearchEngine';
 
 function App() {
@@ -13,17 +12,6 @@ function App() {
         <img src={dictionary} className="dictionaryImg" alt="dictionary"/>
         </h1>
         <SearchEngine />
-        <div>
-          This page is under development, please come back later
-          <Loader
-      className="loader"
-        type="Watch"
-        color="#00BFFF"
-        height={70}
-        width={100} 
-      />
-        </div>
-        
       </header>
 
       <footer>

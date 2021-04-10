@@ -1,6 +1,7 @@
 import React from "react";
 import Meaning from './Meaning';
 import Phonetic from './Phonetic';
+import Loader from "react-loader-spinner";
 import './Results.css';
 
 export default function Results(props) {
@@ -25,7 +26,18 @@ export default function Results(props) {
         </div>
     );
    } else {
-       return null;
+       return (
+           <div className="info">
+               <h3>Waiting any <br />English word!😊</h3>
+               <Loader
+                  className="loader"
+                    type="Watch"
+                    color="#00BFFF"
+                    height={70}
+                    width={100} 
+            />
+           </div>
+           );
    }
 }
    
