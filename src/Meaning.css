@@ -17,6 +17,18 @@ h3.wordType:first-letter {
     font-weight: 500;
 }
 
+em{
+    font-size: 14px;
+}
+
+em::before{
+    content: "¨ ";
+}
+
+em::after{
+    content: " ¨";
+}
+
 h4{
     font-size: 15px; 
     text-decoration-line: underline; 
