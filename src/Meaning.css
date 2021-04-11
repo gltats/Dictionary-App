@@ -1,0 +1,28 @@
+.Meaning{
+    padding: 9px;
+}
+
+h3.wordType{
+    font-size: 15px;
+    text-decoration-line: underline;
+   color: rgba(61, 61, 112, 0.904);
+}
+
+h3.wordType:first-letter {
+    text-transform: uppercase;
+  }
+
+.definition{
+    color: rgb(24, 24, 26);
+    font-weight: 500;
+}
+
+h4{
+    font-size: 15px; 
+    text-decoration-line: underline; 
+    padding-top: 7px;
+}
+
+li:first-letter {
+    text-transform: uppercase;
+  }
